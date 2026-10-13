@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>César Filho — Desenvolvedor Full-Stack</title>
+  <meta name="description" content="Portfólio de Augusto Vasconcelos, Analista de dados . Projetos web, habilidades, experiência e formas de contato." />
+  <meta name="author" content="Augusto Vasconcelos" />
+  <meta name="theme-color" content="#0a0e14" />
+
+  <!-- Open Graph (preview em redes sociais e apps de mensagem) -->
+  <meta property="og:type" content="website" /> 
+  <meta property="og:locale" content="pt_BR" />
+  <meta property="og:title" content="Augusto Vasconcelos — Analista de Dados Júnior" />
+  <meta property="og:description" content="Portfólio de projetos, habilidades e contato." />
+  <meta property="og:url" content="https://seu-portfolio.vercel.app/" />
+
+  <!-- Favicon (SVG embutido, sem arquivo extra) -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%230a0e14'/%3E%3Ctext x='50' y='66' font-family='monospace' font-size='42' font-weight='bold' text-anchor='middle' fill='%232dd4bf'%3ECF%3C/text%3E%3C/svg%3E" />
+
+  <!-- Fontes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+  <script src="main.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+  <!-- ===== Navbar ===== -->
+  <header class="navbar" id="navbar">
+    <div class="container navbar-inner">
+      <a class="logo" href="#inicio" aria-label="Voltar ao início">
+        <span class="logo-bracket">&lt;</span>cf<span class="logo-bracket">/&gt;</span>
+      </a>
+
+      <nav aria-label="Navegação principal">
+        <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="navMenu" aria-label="Abrir menu">
+          <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-links" id="navMenu">
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projetos">Projetos</a></li>
+          <li><a href="#experiencia">Experiência</a></li>
+          <li><a href="#contato">Contato</a></li>
+          <li><a class="btn btn-outline btn-sm" href="#contato">Fale comigo</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <!-- ===== Hero ===== -->
+    <section class="hero" id="inicio">
+      <div class="container hero-inner">
+        <p class="hero-badge" data-reveal>
+          <span class="badge-dot" aria-hidden="true"></span> Disponível para novos projetos
+        </p>
+
+        <p class="hero-hello" data-reveal>Olá, eu sou</p>
+        <h1 class="hero-title" data-reveal>César <span class="text-gradient">Filho</span></h1>
+
+        <p class="hero-role" data-reveal>
+          <span class="hero-role-text" id="typewriter"></span><span class="cursor" aria-hidden="true"></span>
+        </p>
+
+        <p class="hero-sub" data-reveal>
+          Construo aplicações web do back-end ao front-end — APIs, interfaces e
+          tudo que aparece no meio. Apaixonado por código limpo, boas práticas e
+          soluções que resolvem problemas de verdade.
+        </p>
+
+        <div class="hero-ctas" data-reveal>
+          <a class="btn btn-primary" href="#projetos">Ver projetos</a>
+          <a class="btn btn-outline" href="#contato">Entrar em contato</a>
+        </div>
+      </div>
+
+      <a class="scroll-hint" href="#sobre" aria-label="Rolar para a seção Sobre">
+        <span class="mouse" aria-hidden="true"><span class="mouse-wheel"></span></span>
+      </a>
+    </section>
+
+    <!-- ===== Sobre ===== -->
+    <section class="section" id="sobre">
+      <div class="container">
+        <header class="section-header" data-reveal>
+          <span class="kicker">01. sobre</span>
+          <h2>Quem sou eu</h2>
+        </header>
+
+        <div class="about-grid">
+          <div class="about-text" data-reveal>
+            <p>
+              Sou desenvolvedor full-stack e gosto de estar presente em todo o ciclo
+              de um produto: modelar o banco, desenhar a API, construir a interface
+              e acompanhar tudo funcionando em produção.
+            </p>
+            <p>
+              Busco sempre evoluir com projetos reais, estudos constantes e
+              contribuições para a comunidade. Quando não estou programando,
+              provavelmente estou explorando alguma tecnologia nova ou tomando um
+              bom café.
+            </p>
+            <ul class="about-list">
+              <li>💻 Foco em JavaScript/TypeScript em toda a stack</li>
+              <li>🌐 Interesse especial em aplicações web e APIs</li>
+              <li>🔧 Defensor de código limpo e testes automatizados</li>
+            </ul>
+          </div>
+
+          <div class="about-stats" data-reveal>
+            <div class="stat">
+              <span class="stat-number" data-count="3">0</span><span class="stat-plus">+</span>
+              <span class="stat-label">anos de experiência</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number" data-count="20">0</span><span class="stat-plus">+</span>
+              <span class="stat-label">projetos construídos</span>
+            </div>
+            <div class="stat">
+              <span class="stat-number" data-count="10">0</span><span class="stat-plus">+</span>
+              <span class="stat-label">tecnologias no dia a dia</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Skills ===== -->
+    <section class="section section-alt" id="skills">
+      <div class="container">
+        <header class="section-header" data-reveal>
+          <span class="kicker">02. skills</span>
+          <h2>Tecnologias que uso</h2>
+        </header>
+
+        <div class="skills-grid">
+          <div class="skill-group" data-reveal>
+            <h3>Linguagens</h3>
+            <ul class="chips">
+              <li class="chip">JavaScript</li>
+              <li class="chip">TypeScript</li>
+              <li class="chip">Python</li>
+              <li class="chip">SQL</li>
+              <li class="chip">Java</li>
+            </ul>
+          </div>
+          <div class="skill-group" data-reveal>
+            <h3>Front-end</h3>
+            <ul class="chips">
+              <li class="chip">React</li>
+              <li class="chip">Next.js</li>
+              <li class="chip">HTML/CSS</li>
+              <li class="chip">Tailwind CSS</li>
+            </ul>
+          </div>
+          <div class="skill-group" data-reveal>
+            <h3>Back-end</h3>
+            <ul class="chips">
+              <li class="chip">Node.js</li>
+              <li class="chip">Express</li>
+              <li class="chip">PostgreSQL</li>
+              <li class="chip">MongoDB</li>
+              <li class="chip">REST APIs</li>
+            </ul>
+          </div>
+          <div class="skill-group" data-reveal>
+            <h3>Ferramentas</h3>
+            <ul class="chips">
+              <li class="chip">Git/GitHub</li>
+              <li class="chip">Docker</li>
+              <li class="chip">Linux</li>
+              <li class="chip">Vercel</li>
+              <li class="chip">Figma</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Projetos ===== -->
+    <section class="section" id="projetos">
+      <div class="container">
+        <header class="section-header" data-reveal>
+          <span class="kicker">03. projetos</span>
+          <h2>Coisas que já construí</h2>
+        </header>
+
+        <div class="projects-grid">
+          <article class="project-card" data-reveal>
+            <div class="project-top">
+              <svg class="project-folder" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7z"/></svg>
+              <div class="project-links">
+                <a href="https://github.com/seu-usuario" aria-label="Repositório no GitHub" target="_blank" rel="noopener noreferrer">
+                  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.55 0-.27-.01-1.17-.02-2.12-3.2.7-3.88-1.36-3.88-1.36-.52-1.33-1.28-1.68-1.28-1.68-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.19 1.76 1.19 1.03 1.76 2.69 1.25 3.35.96.1-.75.4-1.25.72-1.54-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11.1 11.1 0 0 1 5.8 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.42-2.7 5.39-5.26 5.68.41.36.78 1.06.78 2.14 0 1.55-.01 2.79-.01 3.17 0 .31.21.67.8.55A11.51 11.51 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg>
+                </a>
+                <a href="#" aria-label="Ver projeto ao vivo" target="_blank" rel="noopener noreferrer">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                </a>
+              </div>
+            </div>
+            <h3 class="project-title">DevMetrics</h3>
+            <p class="project-desc">Dashboard que mostra métricas de repositórios GitHub em tempo real: commits, issues, stars e gráficos de atividade.</p>
+            <ul class="project-tags">
+              <li>React</li><li>GitHub API</li><li>Chart.js</li>
+            </ul>
+          </article>
+
+          <article class="project-card" data-reveal>
+            <div class="project-top">
+              <svg class="project-folder" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7z"/></svg>
+              <div class="project-links">
+                <a href="https://github.com/seu-usuario" aria-label="Repositório no GitHub" target="_blank" rel="noopener noreferrer">
+                  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.55 0-.27-.01-1.17-.02-2.12-3.2.7-3.88-1.36-3.88-1.36-.52-1.33-1.28-1.68-1.28-1.68-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.19 1.76 1.19 1.03 1.76 2.69 1.25 3.35.96.1-.75.4-1.25.72-1.54-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11.1 11.1 0 0 1 5.8 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.42-2.7 5.39-5.26 5.68.41.36.78 1.06.78 2.14 0 1.55-.01 2.79-.01 3.17 0 .31.21.67.8.55A11.51 11.51 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg>
+                </a>
+                <a href="#" aria-label="Ver projeto ao vivo" target="_blank" rel="noopener noreferrer">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                </a>
+              </div>
+            </div>
+            <h3 class="project-title">TaskFlow API</h3>
+            <p class="project-desc">API REST de gestão de tarefas com autenticação JWT, filtros avançados e documentação completa dos endpoints.</p>
+            <ul class="project-tags">
+              <li>Node.js</li><li>Express</li><li>PostgreSQL</li>
+            </ul>
+          </article>
+
+          <article class="project-card" data-reveal>
+            <div class="project-top">
+              <svg class="project-folder" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7z"/></svg>
+              <div class="project-links">
+                <a href="https://github.com/seu-usuario" aria-label="Repositório no GitHub" target="_blank" rel="noopener noreferrer">
+                  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.55 0-.27-.01-1.17-.02-2.12-3.2.7-3.88-1.36-3.88-1.36-.52-1.33-1.28-1.68-1.28-1.68-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.19 1.76 1.19 1.03 1.76 2.69 1.25 3.35.96.1-.75.4-1.25.72-1.54-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11.1 11.1 0 0 1 5.8 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.42-2.7 5.39-5.26 5.68.41.36.78 1.06.78 2.14 0 1.55-.01 2.79-.01 3.17 0 .31.21.67.8.55A11.51 11.51 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg>
+                </a>
+                <a href="#" aria-label="Ver projeto ao vivo" target="_blank" rel="noopener noreferrer">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                </a>
+              </div>
+            </div>
+            <h3 class="project-title">DevLinks</h3>
+            <p class="project-desc">Agregador de links estilo "link-in-bio" com temas personalizáveis, modo escuro e estatísticas de cliques.</p>
+            <ul class="project-tags">
+              <li>Next.js</li><li>Tailwind CSS</li>
+            </ul>
+          </article>
+
+          <article class="project-card" data-reveal>
+            <div class="project-top">
+              <svg class="project-folder" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7z"/></svg>
+              <div class="project-links">
+                <a href="https://github.com/seu-usuario" aria-label="Repositório no GitHub" target="_blank" rel="noopener noreferrer">
+                  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.55 0-.27-.01-1.17-.02-2.12-3.2.7-3.88-1.36-3.88-1.36-.52-1.33-1.28-1.68-1.28-1.68-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.19 1.76 1.19 1.03 1.76 2.69 1.25 3.35.96.1-.75.4-1.25.72-1.54-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11.1 11.1 0 0 1 5.8 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.42-2.7 5.39-5.26 5.68.41.36.78 1.06.78 2.14 0 1.55-.01 2.79-.01 3.17 0 .31.21.67.8.55A11.51 11.51 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg>
+                </a>
+                <a href="#" aria-label="Ver projeto ao vivo" target="_blank" rel="noopener noreferrer">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                </a>
+              </div>
+            </div>
+            <h3 class="project-title">Weather Now</h3>
+            <p class="project-desc">App de previsão do tempo com geolocalização, busca por cidade e alertas de mudanças bruscas de temperatura.</p>
+            <ul class="project-tags">
+              <li>JavaScript</li><li>OpenWeather API</li>
+            </ul>
+          </article>
+
+          <article class="project-card" data-reveal>
+            <div class="project-top">
+              <svg class="project-folder" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7z"/></svg>
+              <div class="project-links">
+                <a href="https://github.com/seu-usuario" aria-label="Repositório no GitHub" target="_blank" rel="noopener noreferrer">
+                  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.55 0-.27-.01-1.17-.02-2.12-3.2.7-3.88-1.36-3.88-1.36-.52-1.33-1.28-1.68-1.28-1.68-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.19 1.76 1.19 1.03 1.76 2.69 1.25 3.35.96.1-.75.4-1.25.72-1.54-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11.1 11.1 0 0 1 5.8 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.42-2.7 5.39-5.26 5.68.41.36.78 1.06.78 2.14 0 1.55-.01 2.79-.01 3.17 0 .31.21.67.8.55A11.51 11.51 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg>
+                </a>
+                <a href="#" aria-label="Ver projeto ao vivo" target="_blank" rel="noopener noreferrer">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                </a>
+              </div>
+            </div>
+            <h3 class="project-title">Chat em tempo real</h3>
+            <p class="project-desc">Aplicação de chat com salas temáticas, indicador de "digitando..." e histórico persistente via WebSocket.</p>
+            <ul class="project-tags">
+              <li>Socket.io</li><li>Node.js</li>
+            </ul>
+          </article>
+
+          <article class="project-card" data-reveal>
+            <div class="project-top">
+              <svg class="project-folder" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7z"/></svg>
+              <div class="project-links">
+                <a href="https://github.com/seu-usuario" aria-label="Repositório no GitHub" target="_blank" rel="noopener noreferrer">
+                  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.55 0-.27-.01-1.17-.02-2.12-3.2.7-3.88-1.36-3.88-1.36-.52-1.33-1.28-1.68-1.28-1.68-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.19 1.76 1.19 1.03 1.76 2.69 1.25 3.35.96.1-.75.4-1.25.72-1.54-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11.1 11.1 0 0 1 5.8 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.42-2.7 5.39-5.26 5.68.41.36.78 1.06.78 2.14 0 1.55-.01 2.79-.01 3.17 0 .31.21.67.8.55A11.51 11.51 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg>
+                </a>
+                <a href="#" aria-label="Ver projeto ao vivo" target="_blank" rel="noopener noreferrer">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                </a>
+              </div>
+            </div>
+            <h3 class="project-title">Portfólio v1</h3>
+            <p class="project-desc">A primeira versão deste portfólio — HTML, CSS e JavaScript puros, com foco em performance e acessibilidade.</p>
+            <ul class="project-tags">
+              <li>HTML</li><li>CSS</li><li>JavaScript</li>
+            </ul>
+          </article>
+        </div>
+
+        <p class="projects-more" data-reveal>
+          Mais projetos no meu
+          <a href="https://github.com/seu-usuario" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+        </p>
+      </div>
+    </section>
+
+    <!-- ===== Experiência ===== -->
+    <section class="section section-alt" id="experiencia">
+      <div class="container">
+        <header class="section-header" data-reveal>
+          <span class="kicker">04. experiência</span>
+          <h2>Minha trajetória</h2>
+        </header>
+
+        <ol class="timeline">
+          <li class="timeline-item" data-reveal>
+            <span class="timeline-dot" aria-hidden="true"></span>
+            <span class="timeline-period">2024 — Atual</span>
+            <h3 class="timeline-role">Desenvolvedor Full-Stack <span class="timeline-place">· Freelancer</span></h3>
+            <p>Desenvolvimento de aplicações web ponta a ponta para clientes: APIs, integrações, dashboards e landing pages, do briefing ao deploy.</p>
+          </li>
+          <li class="timeline-item" data-reveal>
+            <span class="timeline-dot" aria-hidden="true"></span>
+            <span class="timeline-period">2022 — 2024</span>
+            <h3 class="timeline-role">Desenvolvedor Front-end <span class="timeline-place">· Agência digital</span></h3>
+            <p>Construção de interfaces responsivas e acessíveis, componentização em React e otimização de performance em projetos de e-commerce.</p>
+          </li>
+          <li class="timeline-item" data-reveal>
+            <span class="timeline-dot" aria-hidden="true"></span>
+            <span class="timeline-period">2021 — 2022</span>
+            <h3 class="timeline-role">Estagiário de Desenvolvimento <span class="timeline-place">· Empresa de tecnologia</span></h3>
+            <p>Primeiros passos profissionais: manutenção de sistemas internos, correção de bugs, testes e muito aprendizado com código legado.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ===== Contato ===== -->
+    <section class="section contact" id="contato">
+      <div class="container contact-inner">
+        <header class="section-header" data-reveal>
+          <span class="kicker">05. contato</span>
+          <h2>Vamos trabalhar juntos?</h2>
+        </header>
+        <p class="contact-text" data-reveal>
+          Estou aberto a freelas, oportunidades e bons papos sobre tecnologia.
+          A melhor forma de me encontrar é por e-mail ou nas redes abaixo — respondo rápido!
+        </p>
+        <a class="btn btn-primary btn-lg" href="mailto:seu@email.com" data-reveal>seu@email.com</a>
+
+        <ul class="social-links" data-reveal>
+          <li>
+            <a href="https://github.com/seu-usuario" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.55 0-.27-.01-1.17-.02-2.12-3.2.7-3.88-1.36-3.88-1.36-.52-1.33-1.28-1.68-1.28-1.68-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.19 1.76 1.19 1.03 1.76 2.69 1.25 3.35.96.1-.75.4-1.25.72-1.54-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11.1 11.1 0 0 1 5.8 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.42-2.7 5.39-5.26 5.68.41.36.78 1.06.78 2.14 0 1.55-.01 2.79-.01 3.17 0 .31.21.67.8.55A11.51 11.51 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://linkedin.com/in/seu-usuario" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zm1.78 13.02H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg>
+            </a>
+          </li>
+          <li>
+            <a href="mailto:seu@email.com" aria-label="E-mail">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><polyline points="2,6 12,13 22,6"/></svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© <span id="ano">2026</span> César Filho — projetado e desenvolvido com HTML, CSS e JS puros.</p>
+      <p class="footer-hint">Hospedado gratuitamente na Vercel ⚡</p>
+    </div>
+  </footer>
+</body>
+</html>
